@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home page</title>
+		<link type="text/css" rel="stylesheet" href="stylepage.css"/>
+
+		<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+</head>
+<body>
+
+	<div class="header">
+		<div class="navbar">
+			<ul> 
+				<li> <a href="#"> HOME </a> </li>
+				<li> | </li>
+				<li> <a href="about.html"> ABOUT </a> </li>
+				<li> | </li>
+				<li> <a href="contact.html"> CONTACT </a> </li>
+				<li> | </li>
+				<li> <a href="book.html"> BOOK </a> </li>
+			</ul>
+		</div>
+	</div>
+	
+	<div id="cover">
+		<div class="cover-content">
+			<h1> S&S SPA </h1>
+			<h2> Enlighten your body and mind </h2>
+		</div>
+	</div>
+
+
+<div class="offers">
+
+	<div id="treatments"> 
+		<h2> Our Treatments </h2>
+		<!-- <h3> Book a treatment and take some moments just for you </h3> -->
+	</div>
+
+	<div class="ouroptions">
+		<div id="one">
+			<img id="first" src="https://az831379.vo.msecnd.net/siteassets/Nagomi-spa-relaxing-treatment.png?w=496&mode=max&rev=1071530030" width="450px" height="300px" alt="Treatment 1"/> 
+
+			<p id="massages"> Massages </p> 
+		</div>
+
+		<div id="two">
+			 <img id="second" src= "https://justdoc.com/blog/content/images/2016/07/Women-getting-facial.jpg" width="450px" height="300px" alt="Treatment 2"/> 
+
+			 <p id="facials"> Facials </p> 
+		</div>
+
+		<div id="three">
+			<img id="third" src="http://alluredayspa.com/wp-content/uploads/2015/12/salon_servis.jpg" width="450" height="300px"/>
+			
+			<p id="salon"> Salon </p>
+		</div>
+
+
+	<button type="button" style="padding: 20px 40px; background-color: #DAA520; color:black; font-family:'Lora', serif; border:none; cursor:pointer; margin-top:30px"> <a href="book.html" style="font-size:40px"> Book! </a> </button>
+</div>
+
+	<div id="openinghours">
+
+		<h2> Opening hours </h2>
+		<p> S&S Spa opens from noon to 8.00 pm from Tuesday to Friday and from 10.00 am to 8.00 pm on weekends. The spa is closed on Monday.
+
+		If you have any questions please contact the team of S&S Spa via s&sspa@gmail.nl or +31 20 938 47 77. </p>
+	</div>
+
+<div id="facilities">
+	<h2> Our facilities </h2>
+		<p> Apart from our facilities to host our treatments, at our spa we also have a swimming pool, sauna, jacuzzi and a tea room available for our customers. You can also come check out our S&S Spa! Here we have all our products available. </p>
+</div> 
+
+
+<div id="etiquette"> 
+	<h2> Before Coming </h2>
+
+	<p id="para"> Important information to bear in mind when visiting S&S SPA. </p> 
+	<p>
+	To preserve the tranquil environment of the spa, we respectfully ask you to switch off your mobile phones, as well as other electronic devices. 
+	<br>
+	<br>
+
+	We also request that you refrain from speaking too loudly in the spa.
+	<br>
+	<br>
+
+	S&S Spa facilities are accessible for guests from the age of 18.
+	<br>
+	<br>
+
+	We will provide you with a bathrobe, slippers and towels.
+	<br>
+	<br>
+
+	It is possible to cancel your treatment up to 24 hours prior to your treatment. In the event of a late cancellation or a no-show, cancellation costs are applicable. </p>
+
+</div>
+</div>
+
+
+<!-- <audio id="sound" autoplay="true" src="https://www.youtube.com/embed/f77SKdyn-1Y"> -->
+ 
+<div class="footer">
+	<div class="footer-content">
+		<ul>
+			<li id="jobs"> JOBS </li>
+			<li> | </li>
+			<li> PRESS </li>
+			<li> | </li>
+			<li> PROMO CODE </li>
+			<li> | </li>
+			<li> TERMS AND CONDITIONS </li>
+		</ul>
+		<div id="copyright">
+			<p>&copy; S&S Spa 2014 ✩ John M. Keynesplein 12-46, 1066 EP Amsterdam ✩ +31209384777 ✩ <a href="https://www.google.nl/maps/place/John+M.+Keynesplein+12,+1066+EP+Amsterdam/data=!4m2!3m1!1s0x47c5e1858e61d4ff:0xa583b369719c707d?sa=X&ved=0ahUKEwjwqMfJidTUAhUMEVAKHbc7A8wQ8gEIIzAA"> Show on Map </a> </p> 
+		</div>
+
+		<img id="logo" src="logo.png"/>
+	</div>
+</div>
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+
+</script>
+
+
+<script type="text/javascript">
+  	$(document).ready(function(){
+  		$('#first').click(function(){
+  			$('#massages').slideToggle("slow", function(){});
+
+  		});	
+
+  		$('#second').click(function(){
+  			$('#facials').slideToggle("slow", function(){});
+
+  		});	
+
+
+  		$('#third').click(function(){
+  			$('#salon').slideToggle("slow", function(){});
+
+  		});	
+
+  		$("#sound")[0].play();
+
+
+
+  		// $("a").hover(function(){
+  		// 	$(this).css("color", "#DAA520");
+  		// }.
+  		// function(){
+  		// 	$(this).css("color", "#ffffff");
+  		
+  		// });
+  		
+  });
+
+</script>
+</body>
+</html>

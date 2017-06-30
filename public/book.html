@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Book Online </title>
+		<link type="text/css" rel="stylesheet" href="stylepage.css"/>
+		
+		<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+</head>
+<body>
+
+<div class="header">
+		<div class="navbar">
+			<ul> 
+				<li> <a href="index.html"> HOME </a> </li>
+				<li> | </li>
+				<li> <a href="about.html"> ABOUT </a> </li>
+				<li> | </li>
+				<li> <a href="contact.html"> CONTACT </a></li>
+				<li> | </li>
+				<li> <a href="#"> BOOK </a> </li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="coverpage2">
+		<div class="cover-content2"> S&S SPA
+		</div>
+	</div>
+
+  <form id="form">
+   	<h1 id="bookingform"> Booking form</h1>
+   		<div id="information">
+	   		<h3> Personal details </h3>
+	   			<p> Title: </p>
+	   			<select name="yourtreament">
+		   			<option selected="selected"> Options </option>
+		   			<option> Mrs. </option>
+		   			<option> Miss. </option>
+		   			<option> Ms. </option>
+		   			<option> Mr. </option>
+		   			<option> N/A </option>
+		   		</select>
+	   			<br>
+	   			<br>
+	   			<br>
+	   			<br>
+
+	   			<p> Name: </p>
+	   			<input type="TEXT" size="30" maxlength="99" />
+	   			<p> Email: </p>
+	   			<input type="TEXT" size="30" maxlength="99" /></p>
+	  			<p> Telephone: </p> 
+	  			<input type="TEXT" size="30" maxlength="99" /></p>  
+		  
+		<br>
+		<br>
+		<div id="inline">
+		  	<h3> Select a Date & Time </h3>
+		 		<input id="calender" />
+		 	<!-- 	<input type="text" id="time" data-format="HH:mm" data-template="HH : mm" name="datetime"/> -->
+
+		 	<div id="test">
+  			<img id="myImage" src="pedicure.jpeg" alt="image test" />
+  			<p> Book today! </p>
+  			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+
+		   <h3> Your Treatment</h3>
+		   		<select id="alloptions" name="yourtreament">
+		   			<option selected="selected"> Options </option>
+		   			<option> Face Massage (€20) </option>
+		   			<option> Full Body Massage (€60) </option>
+		  			<option> Stone Massage (€60) </option>
+		  			<option> Hair Cut (€20) </option>
+		  			<option> Hair Cut + Wash (€30) </option>
+		  			<option> Hair Styling (€40) </option>
+		  			<option> Facial (€25) </option>
+		  			<option> Face Peel (€30) </option>
+		  			<option> Manicure (€20) </option>
+		  			<option> Pedicure (€20) </option>
+		  			<option> Mani-Pedi (€35) </option>
+		  			<option> Eyebrows (€15) </option>
+		  		 </select>
+		
+		   <br/><br/>
+		  
+		   <input class="end" type="submit" value="Submit" />
+		   <input class="end" type="reset" value="Clear this form" /> 
+ 	</div>
+
+  </form>
+
+
+
+  <div class="footer">
+	<div class="footer-content">
+		<ul>
+			<li id="jobs"> JOBS </li>
+			<li> | </li>
+			<li> PRESS </li>
+			<li> | </li>
+			<li> PROMO CODE </li>
+			<li> | </li>
+			<li> TERMS AND CONDITIONS </li>
+		</ul>
+		<div id="copyright">
+			<p>&copy; S&S Spa 2014 ✩ John M. Keynesplein 12-46, 1066 EP Amsterdam ✩ +31209384777 ✩ <a href="https://www.google.nl/maps/place/John+M.+Keynesplein+12,+1066+EP+Amsterdam/data=!4m2!3m1!1s0x47c5e1858e61d4ff:0xa583b369719c707d?sa=X&ved=0ahUKEwjwqMfJidTUAhUMEVAKHbc7A8wQ8gEIIzAA"> Show on Map </a> </p> 
+		</div>
+
+		<img id="logo" src="logo.png"/>
+	</div>
+</div>
+
+ <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"> 
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script> 
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"> 
+</script>
+
+<script>
+$(document).ready(function() { 
+  		$("#calender").datepicker(function(){
+  			$("#datepicker").slideToggle("slow", function(){});
+  		});
+  		$('#datepicker').click(function(){
+  			$(".datepicker").slideToggle("slow", function() {});
+
+  		});
+
+  		// $('.navbar li').hover(function(){
+  		// 	$('.navbar li').css("color", "black")
+  		
+  		// });
+
+
+		var images = new Array ('ourbuilding.jpeg', 'bodymassage.jpeg', 'relax.jpg');
+		var index = 1;
+
+		function rotateImage()
+		{
+		  $('#myImage').fadeOut('fast', function()
+		  {
+		    $(this).attr('src', images[index]);
+
+		    $(this).fadeIn('fast', function()
+		    {
+		      if (index == images.length-1)
+		      {
+		        index = 0;
+		      }
+		      else
+		      {
+		        index++;
+		      }
+		    });
+		  });
+		}
+
+		$(document).ready(function()
+		{
+		  setInterval (rotateImage, 2500);
+		});
+
+		  		
+
+});
+
+
+
+
+
+
+ </script>
+
+</body>
+</html>
